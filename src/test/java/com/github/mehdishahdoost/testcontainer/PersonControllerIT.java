@@ -1,6 +1,5 @@
 package com.github.mehdishahdoost.testcontainer;
 
-import jakarta.annotation.PostConstruct;
 
 import com.github.mehdishahdoost.testcontainer.entity.Person;
 import com.github.mehdishahdoost.testcontainer.repository.PersonRepository;
@@ -11,6 +10,7 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 public class PersonControllerIT extends BaseIT {
